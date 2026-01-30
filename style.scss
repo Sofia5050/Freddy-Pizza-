@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #3b160c, #140805);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff9f43;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #d6d6d6;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* 🔥 АНИМАЦИЯ НА ХОВЕР */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ff9f43;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff9f43;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #ff7a18, #ff9f43);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 35px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.order-btn {
+  background: linear-gradient(90deg, #ff7a18, #ff9f43);
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-btn {
+  background: transparent;
+  border: 1px solid #ff9f43;
+  padding: 14px 30px;
+  border-radius: 25px;
+  color: #ff9f43;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 420px;
+}
