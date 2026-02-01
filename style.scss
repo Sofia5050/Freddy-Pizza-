@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
+
 .header {
   display: flex;
   align-items: center;
@@ -39,7 +39,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* 🔥 АНИМАЦИЯ НА ХОВЕР */
 .nav a::after {
   content: "";
   position: absolute;
@@ -74,7 +73,7 @@ body {
   transform: scale(1.05);
 }
 
-/* HERO */
+
 .hero {
   display: flex;
   align-items: center;
