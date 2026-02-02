@@ -140,6 +140,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* это menu */
 .menu-title {
   text-align: center;
   color: white;
@@ -573,6 +574,7 @@ body {
   cursor: pointer;
 }
 
+/* это most pupolar */
 .menu-section {
   background: #140805;
 }
@@ -608,6 +610,7 @@ body {
   z-index: 2;
 }
 
+/* это about us */
 .about {
   padding: 100px 60px;
 }
@@ -678,11 +681,11 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: nowrap; /* чтобы все 4 карточки оставались в ряд */
+  flex-wrap: nowrap;
 }
 
 .card {
-  flex: 1 1 calc(25% - 20px); /* 4 карточки в ряд */
+  flex: 1 1 calc(25% - 20px);
   max-width: 340px;
   background: radial-gradient(circle at top, #2b1407, #120804);
   border-radius: 28px;
